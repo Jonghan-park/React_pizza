@@ -5,12 +5,10 @@ import { GlobalStyle } from './globalStyles';
 
 function App() {
   return (
-
     <Router>
       <GlobalStyle />
       <Navbar />
   </Router>
-
   );
 }
 
