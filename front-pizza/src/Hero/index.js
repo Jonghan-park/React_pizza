@@ -1,10 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
+import {HeroContainer} from './HeroElements'
 
 const Hero = () => {
   return (
-    <div>
-      <h1>Hero</h1>
-    </div>
+    <HeroContainer>
+      <NavBar />
+    </HeroContainer>
   )
 }
 
