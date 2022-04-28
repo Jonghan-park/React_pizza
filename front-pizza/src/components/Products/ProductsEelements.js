@@ -8,10 +8,8 @@ export const ProductsContainer = styled.div`
   color: #fff;
 `
 export const ProductWrapper = styled.div`
-  font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   margin: 0 auto;
 `
@@ -25,7 +23,7 @@ export const ProductCard = styled.div`
 export const ProductImg = styled.img`
   height: 300px;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 100%;
   box-shadow: 8px 8px #fdc500;
 `
 
@@ -44,6 +42,8 @@ export const ProductInfo = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
+padding: 2rem;
 text-align: center;
 `
 
