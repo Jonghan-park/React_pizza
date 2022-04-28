@@ -3,6 +3,8 @@ import {
   ProductsContainer,
   ProductsHeading,
   ProductWrapper,
+  ProductTitle,
+  ProductCard,
   ProductImg,
   ProductInfo,
   ProductDesc,
@@ -19,13 +21,15 @@ const Products = ({heading, data}) => {
       <ProductWrapper>
         {data.map((product, index) => {
           return(
-            <ProductWrapper key={index}>
+            <ProductCard key={index}>
               <ProductImg src={product.img} alt={product.alt} />
-              <ProductInfo>{product.name}</ProductInfo>
+              <ProductInfo>
+              <ProductTitle>{product.name}</ProductTitle> 
               <ProductDesc>{product.desc}</ProductDesc>
               <ProductPrice>{product.price}</ProductPrice>
               <ProductButton>{product.button}</ProductButton>
-            </ProductWrapper>
+              </ProductInfo>
+            </ProductCard>
           )
         })}
       </ProductWrapper>
