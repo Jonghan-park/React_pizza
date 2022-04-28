@@ -11,21 +11,24 @@ export const ScrollToTopIconContainer = styled.div`
 `
 
 export const ScrollToTopIcon  = styled.div`
-  background-color: #551B54;
-  border: 2px solid #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  align-items: center;
+  background-color: #fdc500;
+  border: 2px solid #e31837;
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  color: #fff;
+  color: #e31837;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
   transition: all .5s ease-in-out;
 
   &:hover{
     animation: none;
-    background-color: #fff;
-    color: #551B54;
-    border: 2px solid #551B54;
+    background-color: #e31837;
+    color: #fdc500;
+    border: 2px solid #fdc500;
   }
 
   @keyframes movebtn {
